@@ -82,6 +82,6 @@ const signout = () => {
 }
 export const {Provider, Context} = createDataContext(
     authReducer,
-    {signin, signout, signup, clearErrorMessage},
+    {signin, signout, signup, },
     {token: null, errorMessage: ''}
 );
