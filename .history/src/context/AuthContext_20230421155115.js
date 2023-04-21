@@ -48,14 +48,13 @@ const signin = (dispatch) =>  async ({email, password}) => {
 
         try {
             const response = await tracker.post('/signin', {email, password});
-            // 
-            
-            await AsyncStorage.setItem('token', response.data.token);
-            dispatch({
-                type: 'signin',
-                payload: response.data.token
-            })
-            navigate('TrackList');
+            console.log(response.data);
+            // await AsyncStorage.setItem('token', response.data.token);
+            // dispatch({
+            //     type: 'signin',
+            //     payload: response.data.token
+            // })
+            // navigate('TrackList');
         } catch (err) {
             // console.log(err.message)
             dispatch({

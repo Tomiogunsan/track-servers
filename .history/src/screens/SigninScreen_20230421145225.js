@@ -11,7 +11,7 @@ const SigninScreen = () => {
     <AuthForm 
     headerText='Sign In to Your Account'
     errorMessage={state.errorMessage}
-    onSubmit={signin}
+    onSubmit={() => {}}
     submitButtonText='Sign in'
     />
     <NavLink 

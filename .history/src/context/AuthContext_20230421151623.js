@@ -21,14 +21,13 @@ const signup =  (dispatch) =>  async ({ email, password }) => {
         const response = await tracker.post("/signup", { email, password });
         await AsyncStorage.setItem('token', response.data.token);
         dispatch({
-            type: 'signin',
+            type: 'signup',
             payload: response.data.token
         });
 
         navigate('TrackList');
         console.log(response.data);
       } catch (err) {
-        console.log(err)
        dispatch({
         type: 'add_error', 
         payload: 'Something went wrong with sign up'
@@ -48,8 +47,6 @@ const signin = (dispatch) =>  async ({email, password}) => {
 
         try {
             const response = await tracker.post('/signin', {email, password});
-            // 
-            
             await AsyncStorage.setItem('token', response.data.token);
             dispatch({
                 type: 'signin',
@@ -57,7 +54,6 @@ const signin = (dispatch) =>  async ({email, password}) => {
             })
             navigate('TrackList');
         } catch (err) {
-            // console.log(err.message)
             dispatch({
                 type: 'add_error',
                 payload: 'Something went wrong with sign in'

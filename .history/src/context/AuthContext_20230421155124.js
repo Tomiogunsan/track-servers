@@ -48,8 +48,7 @@ const signin = (dispatch) =>  async ({email, password}) => {
 
         try {
             const response = await tracker.post('/signin', {email, password});
-            // 
-            
+            console.log(response.data);
             await AsyncStorage.setItem('token', response.data.token);
             dispatch({
                 type: 'signin',
