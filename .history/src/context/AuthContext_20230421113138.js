@@ -20,9 +20,8 @@ const signup =  (dispatch) =>  async ({ email, password }) => {
         dispatch({
             type: 'signup',
             payload: response.data.token
-        });
-
-        navigate('TrackList');
+        })
+        
         console.log(response.data);
       } catch (err) {
        dispatch({
