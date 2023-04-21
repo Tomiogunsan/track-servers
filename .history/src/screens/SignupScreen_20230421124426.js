@@ -15,7 +15,7 @@ const SignupScreen = ({navigation}) => {
       headerText='Sign Up for Tracker'
       errorMessage={state.errorMessage}
       submitButtonText='Sign Up'
-      onSubmit={signup}
+      on
       />
       <TouchableOpacity onPress={() => navigation.navigate("Signin")}>
         <Spacer>
