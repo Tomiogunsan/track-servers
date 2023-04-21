@@ -4,7 +4,6 @@ import {Text, Input, Button} from 'react-native-elements';
 import Spacer from "../components/Spacer";
 import { Context as AuthContext } from "../context/AuthContext";
 
-
 const SignupScreen = ({navigation}) => {
     const {state, signup } = useContext(AuthContext)
     const [email, setEmail] = useState('')
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
       fontSize: 16,
       color: 'red',
       marginLeft: 15,
-      marginTop: 15
+      
     }
 });
 
