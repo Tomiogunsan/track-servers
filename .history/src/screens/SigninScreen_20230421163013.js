@@ -5,7 +5,7 @@ import NavLink from "../components/NavLink";
 import { Context as AuthContext } from "../context/AuthContext";
 import { NavigationEvents } from "react-navigation";
 
-const SigninScreen = () => {
+const SigninScreen = ({navigato}) => {
   const { state, signin, clearErrorMessage } = useContext(AuthContext);
   return (
     <View style={styles.container}>
