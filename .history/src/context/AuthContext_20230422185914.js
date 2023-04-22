@@ -18,9 +18,7 @@ const authReducer = (state, action) => {
     }
 };
 
-const tryLocalSignin = () => {
-    
-}
+
 
 const clearErrorMessage = dispatch => () => {
     dispatch({type: 'clear_error_message'})
