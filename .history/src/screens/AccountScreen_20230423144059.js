@@ -8,12 +8,12 @@ import { SafeAreaView } from 'react-navigation';
 const AccountScreen = () => {
     const { signout } = useContext(AuthContext)
     return (
-      <SafeAreaView forceInset={{top: 'always'}}>
+      <SafeAreaView>
         <Text style={{ fontSize: 48 }}>Account Screen</Text>
         <Spacer>
           <Button title="Sign Out" onPress={signout} />
         </Spacer>
-      </SafeAreaView>
+      </>
     );
 }
 
