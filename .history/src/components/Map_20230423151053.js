@@ -6,9 +6,8 @@ const Map = () => {
     let points = [];
     for(let i = 0; i< 20; i++){
         points.push({
-            latitude: 37.33233 + i * 0.001,
-            longitude: -122.03121 + i * 0.001
-        });
+            lat
+        })
     }
     return <MapView 
     style={styles.map}
@@ -19,7 +18,7 @@ const Map = () => {
         longitudeDelta:0.01
     }}
     >
-        <Polyline coordinates={points}/>
+        <Polyline />
     </MapView>
     
 };
