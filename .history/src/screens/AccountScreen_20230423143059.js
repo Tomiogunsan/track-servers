@@ -9,9 +9,8 @@ const AccountScreen = () => {
     return (
       <>
         <Text style={{ fontSize: 48 }}>Account Screen</Text>
-        <Spacer>
-          <Button title="Sign Out" onPress={signout} />
-        </Spacer>
+        <Spacer></Spacer>
+       
       </>
     );
 }

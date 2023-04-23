@@ -92,7 +92,7 @@ const signout = (dispatch) => async () => {
     dispatch({type: 'signout'});
     navigate('loginFlow');
         // somehow sign out
-    };
+    }
 
 export const {Provider, Context} = createDataContext(
     authReducer,

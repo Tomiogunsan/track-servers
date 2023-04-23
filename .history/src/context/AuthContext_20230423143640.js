@@ -90,9 +90,9 @@ const signin = (dispatch) =>  async ({email, password}) => {
 const signout = (dispatch) => async () => {
     await AsyncStorage.removeItem('token')
     dispatch({type: 'signout'});
-    navigate('loginFlow');
+    navigate('')
         // somehow sign out
-    };
+    }
 
 export const {Provider, Context} = createDataContext(
     authReducer,
