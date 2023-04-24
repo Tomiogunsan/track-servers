@@ -10,19 +10,17 @@ const Map = () => {
             longitude: -122.03121 + i * 0.001
         });
     }
-    return (
-      <MapView
-        style={styles.map}
-        initialRegion={{
-          latitude: 37.33233,
-          longitude: -122.03121,
-          latitudeDelta: 0.01,
-          longitudeDelta: 0.01,
-        }}
-      >
-        <Polyline coordinates={points} />
-      </MapView>
-    );
+    return <MapView 
+    style={styles.map}
+    initialRegion={{
+        latitude: 37.33233,
+        longitude: -122.03121,
+        latitudeDelta:0.01,
+        longitudeDelta:0.01
+    }}
+    >
+        <Polyline coordinates={points}/>
+    </MapView>
     
 };
 
